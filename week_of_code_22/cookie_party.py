@@ -24,7 +24,7 @@ import sys
 import math
 
 # Receive standard input
-guests, cookies = raw_input().strip().split(' ')
+n, m = raw_input().strip().split(' ')
 guests, cookies = [int(n), int(m)]
 
 # If guests outnumber or equal cookies, bake the difference
