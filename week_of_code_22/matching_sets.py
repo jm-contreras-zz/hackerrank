@@ -1,28 +1,30 @@
 #!/bin/python
 
 '''
-Consider two -element sets of integers which may contain duplicate numbers,  and . You can perform the following operation on set :
+Consider two -element sets of integers which may contain duplicate numbers, X = {x0, x1, ..., xn-1} and Y = {y0, y1, ..., yn-1}. You
+can perform the following operation on set X:
 
-Choose two elements at some postions  and  where .
-Decrement  by  and increment  by .
-Given  and , find and print the minimum number of operations you must perform so that  is equal to  (i.e., both sets contain the same exact values, and the order doesn't matter); if such a thing is not possible, print instead.
+1. Choose two elements at some postions xi and xj where 0 <= i < j < n.
+2. Decrement xi by 1 and increment xj by 1.
+Given X and Y, find and print the minimum number of operations you must perform so that X is equal to Y (i.e., both sets contain the
+same exact values, and the order doesn't matter); if such a thing is not possible, print -1 instead.
 
 Input Format
-
-The first line contains a single integer, . 
-The second line contains  space-separated integers describing the respective values of set . 
-The third line contains  space-separated integers describing the respective values of set .
+The first line contains a single integer, n. 
+The second line contains n space-separated integers describing the respective values of set X. 
+The third line contains n space-separated integers describing the respective values of set Y.
 
 Constraints
-, where .
- for at least  of the test cases.
-Output Format
+1 <= n <= 10^5
+-10^9 <= xi, yi <= 10^9, where 0 <= i < n.
+n <= 50 for at least 50% of the test cases.
 
+Output Format
 Print a single integer denoting the minimum number of operations required to make set X equal to set Y; if no number of operations will
 ever make the two sets equal, print -1 instead.
 '''
 
-# Read standard input
+# Receive standard input
 n = int(raw_input())
 X = [int(i) for i in raw_input().split(' ')]
 Y = [int(i) for i in raw_input().split(' ')]
