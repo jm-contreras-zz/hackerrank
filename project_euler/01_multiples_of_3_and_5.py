@@ -29,4 +29,4 @@ for _ in range(T):
     N = int(raw_input()) - 1
     
     # Print sum
-    print arithmetic_series(3) + arithmetic_series(5) - arithmetic_series(15)
+    print arithmetic_series(3, N) + arithmetic_series(5, N) - arithmetic_series(15, N)
