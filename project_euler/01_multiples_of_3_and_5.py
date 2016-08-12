@@ -15,14 +15,18 @@ Output Format
 For each test case, print an integer that denotes the sum of all the multiples of 3 or 5 below N.
 '''
 
-# Receive standard input (number of test cases)
+def arithmetic_series(n, N):
+    '''Compute arithmetic series.'''
+    return ((N / n) * (n + n * (N / n))) / 2
+
+# Receive standard input (number of tests)
 T = int(raw_input())
 
-# Iterate through integers
-for _ in xrange(T):
-
-    # Receive standard input (end of sequence)
-    N = int(raw_input())
+# Iterate through tests
+for _ in range(T):
     
-    # Return sum
-    print sum([i for i in range(1, N) if i % 3 == 0 or i % 5 == 0])
+    # Receive standard input (end of sequence)
+    N = int(raw_input()) - 1
+    
+    # Print sum
+    print arithmetic_series(3) + arithmetic_series(5) - arithmetic_series(15)
