@@ -1,3 +1,19 @@
+#!/bin/python
+
+'''
+The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of a given number N?
+
+Input Format
+First line contains T, the number of test cases. This is followed by T lines each containing an integer N.
+
+Output Format 
+For each test case, display the largest prime factor of N.
+
+Constraints
+1 <= T <= 10
+10 <= N <= 10^12
+''' 
+
 # Receive standard input (number of test cases)
 T = int(raw_input())
 
